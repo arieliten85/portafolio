@@ -1,0 +1,228 @@
+/*PORFOLIO*/
+.porfolio {
+  .porfolio_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+
+    .contenedor {
+      // contenedor padre
+      position: relative;
+
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 6px;
+      cursor: pointer;
+
+      // border: solid red 1px;
+      // contenedor padre
+    }
+
+    .capa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+      text-align: center;
+      bottom: -121px;
+      width: 100%;
+      height: 130px;
+      background: rgba(8, 8, 8, 0.603);
+      transition: all 500ms ease-out;
+      // opacity: 0;
+      // visibility: hidden;
+
+      text-align: center;
+
+      p {
+        padding: 16px;
+        color: white;
+      }
+      a {
+        color: white;
+        padding-left: 5px;
+      }
+
+      .contLinkPort {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .contLinkItem {
+        background: rgba(133, 131, 131, 0.562);
+        border-radius: 5px;
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+      }
+      .contLinkItem:hover {
+        background: rgb(121, 206, 240);
+        transition: 0.3s;
+      }
+    }
+
+    // .contenedor figure:hover > .capa {
+    //   bottom: 0;
+    //   visibility: visible;
+    //   opacity: 1;
+    // }
+
+    .cardPorfolio_img_card01 {
+      //  contenedor  img
+      background: url(../img/tododulcemary.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out;
+
+      //  contenedor  img
+    }
+
+    .cardPorfolio_img_card02 {
+      //  contenedor  img
+      background: url(../img/Paula.png);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out;
+
+      //  contenedor  img
+    }
+  }
+}
+
+/*FIN PORFOLIO*/
+
+@media (min-width: 810px) {
+  .porfolio {
+    .porfolio_contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 70px;
+      padding: 50px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .porfolio {
+    margin-top: 100px;
+   
+
+    .porfolio_contenedor {
+      display: flex;
+
+      justify-content: center;
+      gap: 70px;
+      padding: 50px;
+
+      .contenedor {
+        position: relative;
+
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .capa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        text-align: center;
+        bottom: -100%;
+        width: 100%;
+        height: 250px;
+        background: rgba(8, 8, 8, 0.603);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+
+        text-align: center;
+
+        p {
+          font-size: 10px;
+        }
+        a {
+          font-size: 10px;
+        }
+
+        .contLinkPort {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+        .contLinkItem {
+          background: rgba(133, 131, 131, 0.562);
+          border-radius: 3px;
+          width: 100%;
+          padding: 3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contLinkItem:hover {
+          background: rgb(121, 206, 240);
+          transition: 0.3s;
+        }
+      }
+
+      .contenedor figure:hover > .capa {
+        bottom: 0;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .cardPorfolio_img_card01 {
+        //  contenedor  img
+        background: url(../img/tododulcemary.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+
+        //  contenedor  img
+      }
+
+      .cardPorfolio_img_card02 {
+        //  contenedor  img
+        background: url(../img/Paula.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+
+        //  contenedor  img
+      }
+    }
+
+    .imgGaleria {
+      -webkit-transition: all 0.9s ease;
+      -moz-transition: all 0.9s ease;
+      -o-transition: all 0.9s ease;
+      -ms-transition: all 0.9s ease;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .imgGaleria:hover {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+  }
+}
