@@ -15,7 +15,7 @@
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  border: 4px solid #666;
+  border: 4px solid  ($color-principal);
   object-fit: cover;
   margin-top: 50px;
   
@@ -25,15 +25,19 @@
   .aboutText {
     h3 {
       font-size: 2vmax;
-      color: #b0b0a4;
+    
       padding-bottom: 16px;
       text-align: center;
+      color: ($color-principal);
     }
 
     p {
       padding-bottom: 16px;
       letter-spacing: 1px;
-      color: #b0b0a4;
+      color: white;
+      text-align: center;
+      line-height: 25px;
+      padding: 20px;
     }
   }
   .CntBtn {
@@ -47,19 +51,25 @@
 
     padding-top: 20px;
     grid-gap: 10px;
+    padding: 20px;
 
     .bgIconExp {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: rgb(107, 107, 101);
+      background: ($color-secundario);
 
       width: 100px;
       height: 100px;
       padding: 16px;
 
       .iconoExp {
-        color: gray;
+        color: white;
+        font-size: 60px;
+      }
+
+      .iconoExp:hover {
+        color: ($color-principal);
         font-size: 60px;
       }
     }
@@ -69,8 +79,9 @@
 @media (min-width: 810px) {
   .about .contIconosExp {
     grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
-    width: 73%;
+    width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
   }
 }
 
@@ -80,7 +91,7 @@
     // border: rgb(55, 0, 255) solid 1px;
     display: flex;
     padding: 50px;
-    width: 80%;
+    width: 90%;
     margin: auto;
 
     .aboutText {

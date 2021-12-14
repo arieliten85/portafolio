@@ -1,29 +1,10 @@
-@media (min-width: 810px) {
-
-  .services{
-    .services_contenedor {
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    }
-  
-    .line_hover {
-      background: ($color-principal);
-      height: 5px;
-      position: relative;
-      bottom: 0;
-    }
-  
-  }
-
-  
-  
-}
-
 /*SERVICIOS*/
-.services{
- 
+.services {
   .services_contenedor {
+    h3 {
+      color: ($color-principal);
+    }
 
-   
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     justify-items: center;
@@ -32,28 +13,77 @@
     padding: 20px;
     width: 70%;
     margin: auto;
-  
+
     .cardServices {
-      background-color: gray;
+      background: ($color-secundario);
       text-align: center;
       padding: 20px;
-  
+      width: 310px;
+      border-radius: 5px;
+
       cursor: context-menu;
-  
+
       .iconServices {
         font-size: 30px;
-        
+        color: ($color-principal);
+        padding: 16px;
       }
     }
-  
-  
-  
+
     .cardServices:hover {
       .iconServices {
-        color: ($color-principal);
+        color: rgb(159, 206, 111);
+      }
+      h3 {
+        color: rgb(159, 206, 111);
       }
     }
+    
   }
+
+
+  // .line_hover{
+  //   background: ($color-principal);
+  //   height: 5px;
+  //   position: relative;
+  //   bottom: 0;
+  // }
+
+  // .line_hover:hover{
+  //   background: red;
+  //   height: 5px;
+  //   position: relative;
+  //   bottom: 0;
+  // }
+  
 }
 
 /*FIN SERVICIOS*/
+
+@media (min-width: 810px) {
+  .services {
+    .services_contenedor {
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    }
+    .services_contenedor {
+     
+      width: 87%;
+    
+    }
+  }
+
+  .cardServices {
+    background: ($color-secundario);
+    text-align: center;
+    padding: 20px;
+    width: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services {
+    .services_contenedor {
+      width: 80%;
+    }
+  }
+}

@@ -20,11 +20,11 @@
 
 
   .bg_contact {
-    background: crimson;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #6b6b65;
+    background: ($color-secundario);
     border-radius: 10px;
     min-width: 150px;
     min-height: 120px;
@@ -43,9 +43,21 @@
 
   
   .icono_linkedin:hover {
-    color: rgb(121, 206, 240);
+    color: ($color-principal);
   }
   .icono_Mail:hover {
-    color: rgb(121, 206, 240);
+    color: ($color-principal);
   }
 }
+
+
+@media (min-width: 1280px) {
+
+  .contact .contenedor_contact {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 40px;
+  }
+}
+

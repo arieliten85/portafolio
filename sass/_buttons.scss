@@ -1,7 +1,7 @@
 .btnCv {
   border: none;
   cursor: pointer;
-  background-color: ($color-principal);
+  background: ($color-principal);
   padding: 12px;
   margin-top: 20px;
   width: 130px;
@@ -12,15 +12,15 @@
 }
 
 .btnCv:hover {
-  background-color: rgb(150, 185, 115);
+  background-color: rgb(193, 231, 154);
 }
 
 .btn_descubreme {
 
-  color: white;
+  color: black;
   border: none;
   cursor: pointer;
-  background-color: ($color-principal);
+  background: ($color-principal);
   padding: 12px;
   border-radius: 40px;
   width: 170px;

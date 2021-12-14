@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #2b2b2b;
+  background: #3a3a44;
 }
 
 h1 {
@@ -30,15 +30,19 @@ h2 {
 
 h3 {
   font-size: 16px;
-  padding: 16px;
+  padding-bottom: 16px;
   text-align: center;
   letter-spacing: 0.5px;
+  color: #cefd25;
   text-transform: capitalize;
 }
 
 h4 {
   text-align: center;
   font-weight: 200;
+  color: white;
+  padding-bottom: 20px;
+  line-height: 22px;
 }
 
 h5 {
@@ -49,7 +53,6 @@ h5 {
 hr {
   margin: 1rem 0;
   color: inherit;
-  background-color: currentColor;
   border: 0;
   opacity: 0.25;
 }
@@ -58,7 +61,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #81ce34;
+  background: #cefd25;
   opacity: 1;
 }
 
@@ -84,18 +87,6 @@ hr.divider {
   gap: 2em;
 }
 
-@media (min-width: 810px) {
-  .services .services_contenedor {
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  }
-  .services .line_hover {
-    background: #81ce34;
-    height: 5px;
-    position: relative;
-    bottom: 0;
-  }
-}
-
 /*SERVICIOS*/
 .services .services_contenedor {
   display: grid;
@@ -108,22 +99,55 @@ hr.divider {
   margin: auto;
 }
 
+.services .services_contenedor h3 {
+  color: #cefd25;
+}
+
 .services .services_contenedor .cardServices {
-  background-color: gray;
+  background: #fefbff8c;
   text-align: center;
   padding: 20px;
+  width: 310px;
+  border-radius: 5px;
   cursor: context-menu;
 }
 
 .services .services_contenedor .cardServices .iconServices {
   font-size: 30px;
+  color: #cefd25;
+  padding: 16px;
 }
 
 .services .services_contenedor .cardServices:hover .iconServices {
-  color: #81ce34;
+  color: #9fce6f;
+}
+
+.services .services_contenedor .cardServices:hover h3 {
+  color: #9fce6f;
 }
 
 /*FIN SERVICIOS*/
+@media (min-width: 810px) {
+  .services .services_contenedor {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+  .services .services_contenedor {
+    width: 87%;
+  }
+  .cardServices {
+    background: #fefbff8c;
+    text-align: center;
+    padding: 20px;
+    width: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services .services_contenedor {
+    width: 80%;
+  }
+}
+
 .about {
   border: #06060600 solid;
 }
@@ -139,22 +163,25 @@ hr.divider {
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  border: 4px solid #666;
+  border: 4px solid #cefd25;
   object-fit: cover;
   margin-top: 50px;
 }
 
 .about .aboutText h3 {
   font-size: 2vmax;
-  color: #b0b0a4;
   padding-bottom: 16px;
   text-align: center;
+  color: #cefd25;
 }
 
 .about .aboutText p {
   padding-bottom: 16px;
   letter-spacing: 1px;
-  color: #b0b0a4;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  padding: 20px;
 }
 
 .about .CntBtn {
@@ -168,28 +195,35 @@ hr.divider {
   justify-items: center;
   padding-top: 20px;
   grid-gap: 10px;
+  padding: 20px;
 }
 
 .about .contIconosExp .bgIconExp {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #6b6b65;
+  background: #fefbff8c;
   width: 100px;
   height: 100px;
   padding: 16px;
 }
 
 .about .contIconosExp .bgIconExp .iconoExp {
-  color: gray;
+  color: white;
+  font-size: 60px;
+}
+
+.about .contIconosExp .bgIconExp .iconoExp:hover {
+  color: #cefd25;
   font-size: 60px;
 }
 
 @media (min-width: 810px) {
   .about .contIconosExp {
     grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
-    width: 73%;
+    width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
   }
 }
 
@@ -198,7 +232,7 @@ hr.divider {
   .aboutCont {
     display: flex;
     padding: 50px;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   .aboutCont .aboutText {
@@ -261,6 +295,10 @@ hr.divider {
   padding-left: 5px;
 }
 
+.porfolio .porfolio_contenedor .capa .contLinkItem a:hover {
+  color: #181818;
+}
+
 .porfolio .porfolio_contenedor .capa .contLinkPort {
   display: flex;
   justify-content: center;
@@ -274,10 +312,11 @@ hr.divider {
   padding: 3%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .porfolio .porfolio_contenedor .capa .contLinkItem:hover {
-  background: #79cef0;
+  background: #cefd25;
   transition: 0.3s;
 }
 
@@ -297,14 +336,36 @@ hr.divider {
   transition: all 500ms ease-out;
 }
 
+.porfolio .desc_proyecto {
+  width: 100%;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+
+.porfolio .desc_proyecto h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  width: max-content;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
 /*FIN PORFOLIO*/
 @media (min-width: 810px) {
   .porfolio .porfolio_contenedor {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 70px;
     padding: 50px;
+  }
+  .porfolio .desc_proyecto {
+    width: 85%;
+    text-align: center;
+    color: white;
+    line-height: 25px;
   }
 }
 
@@ -312,16 +373,24 @@ hr.divider {
   .porfolio {
     margin-top: 100px;
   }
+  .porfolio .desc_proyecto {
+    width: 100%;
+    color: white;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
   .porfolio .porfolio_contenedor {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    gap: 70px;
-    padding: 50px;
+    gap: 50px;
+    padding: 85px;
   }
   .porfolio .porfolio_contenedor .contenedor {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 115%;
     overflow: hidden;
     border-radius: 6px;
     cursor: pointer;
@@ -362,10 +431,6 @@ hr.divider {
     justify-content: center;
     align-items: center;
   }
-  .porfolio .porfolio_contenedor .capa .contLinkItem:hover {
-    background: #79cef0;
-    transition: 0.3s;
-  }
   .porfolio .porfolio_contenedor .contenedor figure:hover > .capa {
     bottom: 0;
     visibility: visible;
@@ -394,7 +459,7 @@ hr.divider {
     object-fit: cover;
   }
   .porfolio .imgGaleria:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 }
 
@@ -416,11 +481,10 @@ hr.divider {
 }
 
 .contact .bg_contact {
-  background: crimson;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #6b6b65;
+  background: #fefbff8c;
   border-radius: 10px;
   min-width: 150px;
   min-height: 120px;
@@ -435,11 +499,20 @@ hr.divider {
 }
 
 .contact .icono_linkedin:hover {
-  color: #79cef0;
+  color: #cefd25;
 }
 
 .contact .icono_Mail:hover {
-  color: #79cef0;
+  color: #cefd25;
+}
+
+@media (min-width: 1280px) {
+  .contact .contenedor_contact {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 40px;
+  }
 }
 
 .selecionado {
@@ -449,17 +522,15 @@ hr.divider {
 }
 
 .selected {
-  text-decoration: underline #81ce34 1.5px;
+  text-decoration: underline #cefd25 1.5px;
 }
 
 header.bg {
-  height: 100vh;
-  min-height: 40rem;
   padding-top: 4.5rem;
   padding-bottom: 0;
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.342) 0%, rgba(228, 224, 224, 0.288) 100%), url(../img/img-04.jpg);
+  padding-bottom: calc(10rem - 3.2rem);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.342) 0%, rgba(228, 224, 224, 0.288) 100%), url(../img/img-06.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -473,6 +544,8 @@ header.bg {
   align-items: center;
   width: 100%;
   height: 100%;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .cotenedor_descumbreme {
@@ -482,13 +555,24 @@ header.bg {
   margin-top: 50px;
 }
 
+.cont_texto {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+  text-align: center;
+}
+
 .texto_saludos {
-  font-weight: 700;
   font-size: 1.15rem;
   text-align: center;
-  width: 35%;
-  padding-top: 20px;
+  width: 100%;
+  max-width: 100%;
   color: white;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .nav-menu {
@@ -524,7 +608,7 @@ header .logo {
 }
 
 header .logo span {
-  color: #81ce34;
+  color: #cefd25;
 }
 
 header nav {
@@ -576,6 +660,35 @@ header nav ul li a:hover {
     flex-direction: row;
     gap: 20px;
   }
+  header.bg {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.342) 0%, rgba(228, 224, 224, 0.288) 100%), url(../img/img-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  header header.bg {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.342) 0%, rgba(228, 224, 224, 0.288) 100%), url(../img/img-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -585,6 +698,29 @@ header nav ul li a:hover {
   }
   header .bars {
     display: none;
+  }
+  header header.bg {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.342) 0%, rgba(228, 224, 224, 0.288) 100%), url(../img/img-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  header .texto_saludos {
+    font-size: 1.15rem;
+    text-align: center;
+    width: 100%;
+    max-width: 60%;
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 0 auto;
   }
   /*FIN HEADER*/
 }
@@ -604,7 +740,7 @@ footer p {
 .btnCv {
   border: none;
   cursor: pointer;
-  background-color: #81ce34;
+  background: #cefd25;
   padding: 12px;
   margin-top: 20px;
   width: 130px;
@@ -615,14 +751,14 @@ footer p {
 }
 
 .btnCv:hover {
-  background-color: #96b973;
+  background-color: #c1e79a;
 }
 
 .btn_descubreme {
-  color: white;
+  color: black;
   border: none;
   cursor: pointer;
-  background-color: #81ce34;
+  background: #cefd25;
   padding: 12px;
   border-radius: 40px;
   width: 170px;
