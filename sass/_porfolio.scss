@@ -133,11 +133,16 @@
       padding-left: 161px;
     }
   }
+  .btn {
+    display: block;
+  }
 }
 
 @media (min-width: 1280px) {
   .porfolio {
     margin-top: 100px;
+
+   
 
     .desc_proyecto {
       width: 104%;
@@ -159,6 +164,9 @@
       gap: 50px;
       padding: 85px;
 
+
+      
+
       .contenedor {
         position: relative;
         width: 115%;
@@ -166,6 +174,7 @@
         overflow: hidden;
         border-radius: 6px;
         cursor: pointer;
+        
       }
 
       .capa {
@@ -254,5 +263,8 @@
       -o-transform: scale(1.2);
       transform: scale(1.3);
     }
+  }
+  .btn {
+    display: none;
   }
 }

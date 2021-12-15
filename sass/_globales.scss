@@ -17,26 +17,25 @@ body {
   // padding-top: 70px;
 }
 
-
-a{
-  font-family: 'Roboto', sans-serif;
+a {
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   color: #c3defb;
   font-size: 5vmax;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 h2 {
   text-align: center;
-  //   text-decoration:underline ($color-principal) 2px solid ;
+
   color: white;
-  //   padding: 16px;
+
   padding-top: 85px;
   font-size: 35px;
   text-transform: capitalize;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
@@ -44,25 +43,25 @@ h3 {
   padding-bottom: 16px;
   text-align: center;
   letter-spacing: 0.5px;
-  color:  ($color-principal);
+  color: ($color-principal);
   text-transform: capitalize;
   width: 270px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h4 {
   text-align: center;
   font-weight: 200;
   color: white;
-  padding:-1px 25px 0 25px;
+  padding: -1px 25px 0 25px;
   line-height: 22px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h5 {
   color: white;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 hr {
@@ -80,6 +79,6 @@ hr.divider {
   opacity: 1;
 }
 
-p{
-  font-family: 'Roboto', sans-serif;
+p {
+  font-family: "Roboto", sans-serif;
 }
