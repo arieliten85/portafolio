@@ -19,6 +19,7 @@
       text-align: center;
       padding: 20px;
       width: 310px;
+      height: 100%;
       border-radius: 5px;
 
       cursor: context-menu;
@@ -26,7 +27,7 @@
       .iconServices {
         font-size: 30px;
         color: ($color-principal);
-        padding: 16px;
+        padding-bottom: 16px;
       }
     }
 

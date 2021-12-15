@@ -1,13 +1,14 @@
 .btnCv {
   border: none;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
   background: ($color-principal);
   padding: 12px;
   margin-top: 20px;
-  width: 130px;
+  width: 150px;
   transition: 0.3s;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   border-radius: 20px;
 }
 
@@ -27,11 +28,12 @@
   transition: 0.3s;
   font-weight: 700;
   font-size: 0.85rem;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   padding: 1.25rem ;
   border: none;
   text-transform: uppercase;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn_descubreme:hover {

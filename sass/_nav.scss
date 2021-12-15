@@ -50,7 +50,7 @@ header.bg {
   height: 100%;
 
   padding-right: 1.5rem !important;
-padding-left: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .cotenedor_descumbreme {
@@ -74,15 +74,14 @@ padding-left: 1.5rem !important;
 }
 
 .texto_saludos {
-  
   font-size: 1.15rem;
   text-align: center;
   width: 100%;
   max-width: 100%;
- 
+
   color: white;
-  padding-right: 1rem;
-padding-left: 1rem;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .nav-menu {
@@ -107,6 +106,10 @@ section[id] {
 }
 
 header {
+
+  strong{
+    font-size: 25px;
+  }
   .bars {
     display: block;
     font-size: 25px;
@@ -116,7 +119,7 @@ header {
   }
   .logo {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     // position: relative;
 
     span {
@@ -266,8 +269,7 @@ header {
       padding-right: 1rem;
       padding-left: 1rem;
       margin: 0 auto;
-  }
-  
+    }
   }
   /*FIN HEADER*/
 }
