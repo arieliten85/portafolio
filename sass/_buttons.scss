@@ -1,23 +1,5 @@
-.btnCv {
-  border: none;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  background: ($color-principal);
-  padding: 12px;
-  margin-top: 20px;
-  width: 150px;
-  transition: 0.3s;
-  font-weight: 600;
-  letter-spacing: 2px;
-  border-radius: 20px;
-}
-
-.btnCv:hover {
-  background-color: rgb(193, 231, 154);
-}
-
-.btn_descubreme {
-
+.btn {
+ 
   color: black;
   border: none;
   cursor: pointer;
@@ -36,8 +18,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.btn_descubreme:hover {
-  background-color: rgb(150, 185, 115);
+.btn:hover {
+  background-color: rgb(193, 231, 154);
 }
 
 
