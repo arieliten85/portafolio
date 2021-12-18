@@ -1,5 +1,11 @@
 /*PORFOLIO*/
 .porfolio {
+
+  p {
+    
+    width: 100%;
+    margin: 0 auto;
+}
   .porfolio_contenedor {
     display: flex;
     flex-direction: column;
@@ -40,10 +46,9 @@
 
       text-align: center;
 
-      p {
-        padding: 16px;
-        color: white;
-      }
+    
+     
+      
       a {
         color: white;
         padding-left: 5px;
@@ -105,7 +110,7 @@
       letter-spacing: 1px;
     }
 
-    width: 70%;
+    width: 89%;
     text-align: center;
     color: white;
     line-height: 25px;

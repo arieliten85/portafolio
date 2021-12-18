@@ -25,20 +25,21 @@
       width: 100%;
     }
 
-    p {
-      padding-bottom: 16px;
-      letter-spacing: 1px;
-      color: white;
-      text-align: center;
-      line-height: 25px;
-      padding: 17px 30px 35px 30px;
-    }
+    // p {
+    //   padding-bottom: 16px;
+    //   letter-spacing: 1px;
+    //   color: white;
+    //   text-align: center;
+    //   line-height: 25px;
+
+    //   width: 88%;
+    //   margin: 0 auto;
+    // }
   }
   .CntBtn {
     text-align: center;
     margin-bottom: 40px;
     margin-top: 20px;
-    
   }
   .contIconosExp {
     display: grid;
@@ -78,15 +79,22 @@
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
-    
   }
   .aboutCont {
-
-    .btn{
+    .btn {
       display: block;
     }
+    p {
+      font-family: "Roboto", sans-serif;
+      padding-bottom: 16px;
+      letter-spacing: 1px;
+      color: white;
+      text-align: center;
+      line-height: 25px;
+      width: 81%;
+      margin: 0 auto;
   }
-  
+  }
 }
 
 @media (min-width: 1280px) {
@@ -116,8 +124,6 @@
 
       padding: 20px;
     }
-
-   
   }
   /* FIN ALGO DE MI*/
 }
